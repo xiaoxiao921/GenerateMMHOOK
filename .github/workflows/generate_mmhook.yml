@@ -57,6 +57,5 @@ jobs:
         cd MonoMod
         curl -o monomod.zip -L https://github.com/MonoMod/MonoMod/releases/download/v22.05.01.01/MonoMod-22.05.01.01-net50.zip
         unzip monomod.zip
-        chmod u+x MonoMod.RuntimeDetour.HookGen.exe
-        dotnet ./MonoMod.RuntimeDetour.HookGen.exe --private "../../../../../ror2/Risk of Rain 2_Data/Managed/RoR2.dll" ../../../../../MMHOOK_RoR2.dll
+        dotnet ./MonoMod.RuntimeDetour.HookGen.dll --private "../../../../../ror2/Risk of Rain 2_Data/Managed/RoR2.dll" ../../../../../MMHOOK_RoR2.dll
         ls -al
